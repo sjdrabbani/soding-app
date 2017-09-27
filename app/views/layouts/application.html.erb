@@ -9,6 +9,21 @@
   </head>
 
   <body>
+    <div>
+      <ul>
+        <% unless user_signed_in?  %>
+          <li><%= link_to 'Sign up', new_user_registration_path  %></li>
+          <li><%= link_to 'Sign in', new_user_session_path  %></li>
+        <% else %>
+          <li><%= link_to 'Sign out', destroy_user_session_path  %></li>
+        <% end %>  
+      </ul>
+    </div>
+    <div>
+      <% flash.each do |key, message| %>
+        <%= message %>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
