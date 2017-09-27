@@ -5,7 +5,7 @@ RSpec.feature 'User update a task' do
     @john = User.create(email: 'john@example.com', password: 'password')
     login_as(@john)
 
-    @task_one = Task.create(name: 'First Task',
+    @task_one = @john.tasks.create(name: 'First Task',
                             description: 'Test description'
                           )
   end

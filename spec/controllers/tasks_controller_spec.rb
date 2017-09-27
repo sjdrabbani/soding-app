@@ -25,6 +25,10 @@ require 'rails_helper'
 
 RSpec.describe TasksController, type: :controller do
 
+  before do
+    @john = User.create(email: 'john@example.com', password: 'password')
+    login_as(@john)
+  end
   # This should return the minimal set of attributes required to create a valid
   # Task. As you add validations to Task, be sure to
   # adjust the attributes here as well.

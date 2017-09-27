@@ -6,7 +6,7 @@ RSpec.feature 'User can view list of his tasks' do
     login_as(@john)
 
     @task_one = @john.tasks.create(name: 'Task 1', description: 'Task 1 description')
-    @task_one = @john.tasks.create(name: 'Task 2', description: 'Task 2 description')
+    @task_two = @john.tasks.create(name: 'Task 2', description: 'Task 2 description')
     @task_three = @john.tasks.create(name: 'Task 3', description: 'Task 3 description')
   end
 
@@ -31,6 +31,6 @@ RSpec.feature 'User can view list of his tasks' do
     visit '/'
     click_link 'Task List'
 
-    expect(page).to have_content('No task available')
+    expect(page).to have_content('No task is available')
   end
 end

@@ -20,5 +20,6 @@ RSpec.feature 'User create a task' do
 
     @task = Task.last
     expect(current_path).to eq(task_path(@task))
+    expect(@john.id).to eq(@task.user_id)
   end
 end
