@@ -38,6 +38,10 @@
         <%= message %>
       <% end %>
     </div>
-    <%= yield %>
+    <div class='col-md-10'>
+      <%= yield %>
+    </div>
+
+    <%= render partial: 'shared/footer'  %>
   </body>
 </html>

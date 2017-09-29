@@ -4,3 +4,16 @@
 body{
   margin-top: 70px !important;
 }
+
+.form-group input{
+  width: 100%;
+}
+
+.form-group input[type='submit']{
+  width: auto;
+}
+
+.checkbox input[type='checkbox']{
+  margin-left: 0px;
+}
+
