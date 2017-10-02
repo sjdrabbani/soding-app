@@ -1,18 +1,18 @@
 # Soding Task App
 
-An simple application to manage tasks list.
+A simple application to manage tasks list.
 
 
 ## How To Use It
 
 The application is deployed to [Heroku](https://shrouded-tor-71866.herokuapp.com/).
 
-The user needs to sign up first. On successful signing up, the user can maintain his tasks list by clicking at the link 'Tasks' at top. In the task list page, the user can view all his added tasks. From the task list page, the user can create/modify new task and delete a task.
+The user needs to sign up first. On successful signing up, the user can maintain his tasks list by clicking at the link 'Tasks' at top. In the task list page, the user can view all his added tasks. From the same page, the user can also create/modify new task and delete a task.
 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+A step by step process to get a development environment running
 
 #### Prerequisite
 
